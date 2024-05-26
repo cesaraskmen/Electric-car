@@ -4,58 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Light blue kids</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/41e12b085a.js"
+      crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,200;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img
-          src="./assets/imgs/LightBlue_logo-WEB.png"
-          width="120px"
-          alt="Logo de la marca" />
-        <img src="./assets/imgs/menu.png" width="75px" alt="Icono de menu" />
-      </header>
-      <div class="aside">
-        <div class="aside_title">
-          <h2>Ordenar por:</h2>
-           </div>
-          <div class="aside_info">
-           <p>Precio</p>
-          <img src="./assets/imgs/chevron-down.png" width="20px" alt="Flecha para despegar menus"/>
-          </div>
-          </div>
-
-          <main class="main">
-            <div class="card">
-              <div class="card_img">
-                <img src="./assets/imgs/pack short.png" width="500px" alt="polos de niños" />
-              <div class="card_title">
-                  <h2>Conjunto polo-short</h2>
-                <button> Ver Màs</button>
-              </div>
-              </div>
-              <div class="card_item">
-                <img src="./assets/imgs/chevron-double-left.png" width="20px" alt="">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <img src="./assets/imgs/chevron-double-right.png" width="20px" alt="">
-              </div>
-              </div>
-            </main>
-          <div class="footer">
-
-          </div>
-       
-        
+      <aside>
+        <ul class="aside_title">
+          <li>
+            <img
+              src="./assets/imgs/LightBlue_logo-WEB.png"
+              width="80px"
+              alt="logo de la marca" />
             
-       
-      </div>
+            <li><i class="fa-solid fa-bars" id="hamburger"></i></li>
+          </li>
+        </ul>
+
+        <ul class="aside_items">
+          <li>Inicio</li>
+          <li>Catálogo</li>
+          <li>Ofertas</li>
+          <li>Contacto</li>
+        </ul>
+      </aside>
+      <header>
+        <div class="header_items">
+          <p>Ordenar por:</p>
+          <select id="selector" name="Ordenar">
+            <option value="p">Precio</option>
+            <option value="t">Talla</option>
+            <option value="a">Categorias</option>
+          </select>
+        </div>
+      </header>
+      <main>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/1.png" alt="Vestido" />
+            <p>Modelo: Vestido a rayas</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/2.png" alt="polos " />
+            <p>Modelo: Tri pack de polos</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/3.png" alt="polos pima" />
+            <p>Modelo: Polos pima </p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/4.png" alt="polo co tutu" />
+            <p>Modelo: Polo con tutu</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/5.png" alt="pack de polos" />
+            <p>Modelo: Pack de polos</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/productos.png" alt="short" />
+            <p>Modelo: Short de niñas</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/polo short  antifaz.png" alt="polo short" />
+            <p>Modelo: Conjunto polo short</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <section class="main_card">
+          <div class="card">
+            <img class="img_car" src="./assets/imgs/jogger.png" alt="Jogger de niños" />
+            <p>Modelo: Tri pack de jogger</p>
+            <button class="">Ver más</button>
+          </div>
+        </section>
+        <nav>
+          <div class="nav_items"><i class="fa-solid fa-angles-left"></i></div>
+          <div class="nav_items">1</div>
+          <div class="nav_items">2</div>
+          <div class="nav_items">3</div>
+          <div class="nav_items"><i class="fa-solid fa-angles-right"></i></div>
+        </nav>
+      </main>
+      <footer class="footer_items">
+        <ul class="iconos_footer">
+          <li><i id="space2" class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+        <p>Todos los derechos reservados</p>
+      </footer>
     </div>
   </body>
 </html>
